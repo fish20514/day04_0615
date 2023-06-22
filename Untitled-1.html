@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>views/index.html</h1>
+    <input type="text" id="user_name">
+    <button id="user_name">user check</button>
+    <div class="log_user"></div>
+
+
+
+
+    <script>
+        const users_btn = document.querySelector('#users_btn');
+        users_btn.addEventListener('click', ()=>{
+            const user_api = 'http://localhost:3000/users';
+            fetch(user_api)
+            .then(res=>res.json())
+            .then(res=>{
+                let str = ``;
+                
+            })
+        })
+    </script>
+</body>
+</html>
